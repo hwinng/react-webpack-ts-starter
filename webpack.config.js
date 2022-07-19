@@ -28,7 +28,7 @@ if (process.env.SERVE) {
 module.exports = {
     mode: mode,
     target: target,
-    entry: './src/index.js',
+    entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
         assetModuleFilename: 'image/[hash][ext][query]'
@@ -42,16 +42,21 @@ module.exports = {
                     filename: 'static/[hash][ext][query]'
                 }
             },
+            // {
+            //     test: /\.jsx?$/,
+            //     exclude: /node_modules/,
+            //     use: {
+            //         loader: "babel-loader",
+            //         options: {
+            //             // to avoid potential expensive babel recompilation process on each run
+            //             cacheDirectory: true
+            //         }
+            //     }
+            // },
             {
-                test: /\.jsx?$/,
+                test: /\.tsx?$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        // to avoid potential expensive babel recompilation process on each run
-                        cacheDirectory: true
-                    }
-                }
+                use: ['ts-loader']
             },
             {
                 test: /\.(s[ac]|c)ss$/i,
@@ -68,9 +73,9 @@ module.exports = {
             }
         ]
     },
-    devtool: "source-map",
+    devtool: "inline-source-map",
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.ts', 'tsx', '.js']
     },
     plugins: plugins,
     devServer: {

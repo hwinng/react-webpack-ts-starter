@@ -1,14 +1,4 @@
-const pizzaRecipe = {
-    flour: 2,
-    peppers: 1,
-    cheese: 1
-}
+import { render } from "react-dom";
+import App from './App';
 
-const italianPizzaRecipe = {
-    ...pizzaRecipe,
-    cheese: 3,
-    italianPeppers: 1
-}
-
-console.log(pizzaRecipe);
-console.log(italianPizzaRecipe);
+render(<App />, document.getElementById("root"));

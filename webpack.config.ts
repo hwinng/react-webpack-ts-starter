@@ -7,6 +7,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin"
 import MiniCssExtractPlugin from "mini-css-extract-plugin"
 import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin"
 import { CleanWebpackPlugin } from "clean-webpack-plugin"
+import { BundleAnalyzerPlugin as WebpackBundleAnalyzerPlugin } from "webpack-bundle-analyzer"
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin"
 import ESLintPlugin from "eslint-webpack-plugin"
 
@@ -27,6 +28,9 @@ const plugins: any[] = [
   new MiniCssExtractPlugin(),
   new HtmlWebpackPlugin({
     template: "./src/index.html"
+  }),
+  new WebpackBundleAnalyzerPlugin({
+    analyzerPort: 8080
   }),
   new ForkTsCheckerWebpackPlugin({
     async: false

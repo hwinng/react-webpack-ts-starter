@@ -1,8 +1,8 @@
-import React from 'react'
-
+import React from "react"
+import "./styles/index.scss"
 const App = () => {
   return (
-    <div>App</div>
+    <h1>My React and TypeScript App!! {new Date().toLocaleDateString()}</h1>
   )
 }
 

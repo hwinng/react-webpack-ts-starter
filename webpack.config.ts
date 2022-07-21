@@ -75,7 +75,10 @@ const config: Configuration = {
               "@babel/preset-react",
               "@babel/preset-typescript"
             ],
-            plugins: []
+            plugins: [
+              mode === EDeployEnv.DEVELOPMENT &&
+                require.resolve("react-refresh/babel")
+            ].filter(Boolean)
           }
         }
       },

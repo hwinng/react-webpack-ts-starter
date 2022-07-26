@@ -9,7 +9,9 @@
     "build-dev": "cross-env NODE_ENV=development webpack --config webpack.config.ts",
     "build:analyze": "cross-env NODE_ENV=production webpack --analyze --config webpack.config.ts",
     "watch": "webpack --watch",
-    "clean": "rm -rf ./build"
+    "clean": "rm -rf ./build",
+    "prepare": "husky install",
+    "lint": "eslint src/ --max-warnings=0"
   },
   "repository": {
     "type": "git",
@@ -54,6 +56,7 @@
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^7.2.13",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss": "^8.4.14",
     "postcss-loader": "^7.0.1",

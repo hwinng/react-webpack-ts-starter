@@ -11,7 +11,7 @@
     "watch": "webpack --watch",
     "clean": "rm -rf ./build",
     "prepare": "husky install",
-    "lint": "eslint --fix src/"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",

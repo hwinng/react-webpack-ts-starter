@@ -5,7 +5,7 @@
 - [x] React
 - [x] Migrate to Typescript
 - [x] Eslint + Prettier
-- [ ] Pre-commit husky
+- [x] Pre-commit husky
 - [ ] vscode setting
 - [ ] Testing
 - [ ] Github/Gitlab CI

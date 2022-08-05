@@ -30,7 +30,7 @@
         "useTabs": false
       }
     ],
-    "no-console": "warn"
+    "no-console": "off"
   },
   "settings": {
     "react": {

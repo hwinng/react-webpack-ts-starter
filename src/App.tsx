@@ -1,8 +1,12 @@
 import React from "react"
 import "./styles/index.scss"
+import { Timer } from "./components/Timer"
+
 const App = () => {
   return (
-    <h1>My React and TypeScript App!! {new Date().toLocaleDateString()}</h1>
+    <div>
+      Dockerized webpack app at!! <Timer />{" "}
+    </div>
   )
 }
 

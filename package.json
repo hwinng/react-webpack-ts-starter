@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env SERVE=true webpack serve --config webpack.config.ts",
+    "build": "cross-env NODE_ENV=development webpack --config webpack.config.ts",
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.ts",
-    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.ts",
     "build:analyze": "cross-env NODE_ENV=production webpack --analyze --config webpack.config.ts",
     "watch": "webpack --watch",
     "clean": "rm -rf ./build",

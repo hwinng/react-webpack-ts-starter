@@ -140,7 +140,11 @@ const config: Configuration = {
     historyApiFallback: true,
     open: true,
     port: 4000,
-    hot: true
+    hot: true,
+    host: "0.0.0.0"
+  },
+  watchOptions: {
+    poll: 1000 // support docker bind mount
   }
 }
 

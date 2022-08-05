@@ -50,9 +50,9 @@ A starter for real world React project
 - [x] Migrate to Typescript
 - [x] Eslint + Prettier
 - [x] Pre-commit husky
-- [ ] Dockerize
-- [ ] Deploy
+- [x] Dockerize
 - [ ] Common components (optional)
+- [ ] Deploy
 
 ## LICENSE
 

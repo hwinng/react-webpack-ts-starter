@@ -24,13 +24,13 @@
         "arrowParens": "avoid",
         "semi": false,
         "trailingComma": "none",
-        "endOfLine": "lf",
+        "endOfLine": "auto",
         "tabWidth": 2,
         "printWidth": 80,
         "useTabs": false
       }
     ],
-    "no-console": "warn"
+    "no-console": "off"
   },
   "settings": {
     "react": {

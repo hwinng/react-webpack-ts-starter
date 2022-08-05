@@ -30,7 +30,8 @@ const plugins: any[] = [
     template: "./src/index.html"
   }),
   new WebpackBundleAnalyzerPlugin({
-    analyzerPort: 8080
+    analyzerPort: 8080,
+    openAnalyzer: false
   }),
   new ForkTsCheckerWebpackPlugin({
     async: false
